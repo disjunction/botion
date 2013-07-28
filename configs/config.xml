@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+	<development>
+		<driver>
+			<state>
+				<file><zf:const zf:name="APPLICATION_PATH"/>/data/state.serialized</file>
+				<!--
+				<memcache>
+					<host>localhost</host>
+					<port>11211</port>
+				</memcache>
+				-->
+			</state>
+		</driver>
+		<urls>
+			<baseurl>http://beta.imperion.org</baseurl>
+			<login>/</login>
+			<index></index>
+		</urls>
+		<auth>
+			<login>k.pogorelov@traviangames.com</login>
+			<pass>asdasd</pass>
+		</auth>
+		<reporter>
+			<!-- <file>/dev/null</file> -->
+			<file><zf:const zf:name="APPLICATION_PATH"/>/data/reporter.prolog</file>
+			<format>festival</format>
+		</reporter>
+		<breaker>
+			<enabled>1</enabled>
+			<unknown>1000</unknown>
+			<typing>100</typing>
+			<click>1500</click>
+			<afterPlanetSwitch>0</afterPlanetSwitch>
+			<afterClick>3000</afterClick>
+			<planetFinished>7000</planetFinished>
+		</breaker>
+		<planetImprover>
+			<buildingLimits>
+				<default>20</default>
+				<SHIPYARD>20</SHIPYARD>
+				<SCANNER>15</SCANNER>
+				<HYDRO_ELECTRIC_POWER_PLANT>20</HYDRO_ELECTRIC_POWER_PLANT>
+				<SOLAR_FARM>20</SOLAR_FARM>
+                <WIND_FARM>20</WIND_FARM>
+                <HANGAR>20</HANGAR>
+                <HABITAT>17</HABITAT>
+<!--
+				<METAL_MINE>6</METAL_MINE>
+
+				HYDRO_ELECTRIC_POWER_PLANT
+				SHIPYARD
+				SOLAR_FARM
+				<METAL_MINE>0</METAL_MINE>
+				<CRYSTAL_MINE>0</CRYSTAL_MINE>
+				<TRITIUM_RIG>0</TRITIUM_RIG>
+				<FACTORY>30</FACTORY> 
+				<SCANNER>20</SCANNER>
+-->
+			</buildingLimits>
+			<planetBlacklist>
+				<id>2099902</id>
+			</planetBlacklist>
+		</planetImprover>
+	</development>
+	
+	<unittests extends="development">
+		<urls>
+			<baseurl>file://<zf:const zf:name="APPLICATION_PATH"/>/snippets</baseurl>
+			<login>login.html</login>
+			<index>p1.html</index>
+		</urls>
+		<auth>
+			<login>john</login>
+			<pass>doe</pass>
+		</auth>
+		<breaker>
+			<enabled>0</enabled>
+		</breaker>
+	</unittests>
+</config>

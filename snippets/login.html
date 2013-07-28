@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+		<title>Imperion</title>
+		<!-- Meta Information -->
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="author" content="Travian Games GmbH">
+		<meta name="copyright" content="Travian Games GmbH, München 2010">
+		<meta name="keywords" content="browser game, bestes browsergame, weltraum browsergame, browser game gratis, multiplayer browsergame, online multiplayer spiele, imperion, travian games">
+		<meta name="description" content="Imperion ist ein gratis weltraum online multiplayer Browser Game der Travian Games GmbH.">
+		<meta name="robots" content="index, follow">
+		<meta name="content-language" content="de">
+		<meta http-equiv="imagetoolbar" content="no">
+		<!-- Stylesheet -->
+		<style type="text/css">
+				@import url('/css/imperion.css?v=12233');
+				@import url('/css/debug/debug.css?v=12233');
+				@import url('/css/form.css?v=12233');
+				@import url('/css/skin.css?v=12233');
+				@import url('/css/content.css?v=12233');
+				@import url('/css/imperion/interface/dialog.css?v=12233');
+				@import url('/css/imperion/interface/gui/button.css?v=12233');
+				@import url('/css/imperion/interface/gui/table.css?v=12233');
+				@import url('/css/landing/layout.css?v=12233');
+				</style>
+		<style type="text/css">
+				@import url('/css/landing/skin.css?v=12233');
+				@import url('/css/landing/content.css?v=12233');
+		</style>
+		<script type="text/javascript" src="login_files/mootools.js"></script>
+	</head>
+	<body id="body">
+		<noscript>
+			<div  class="fieldgroup">
+				<div  class="error">
+					<p>GitHub does not support browsers with JavaScript disabled. Please whitelist github.com in your javascript blocker.<br>We promise we'll behave.</p>
+				</div>
+			</div>
+		</noscript>
+			<div class="Imperion-Interface-Dialog landingpage hideContainer1">
+		<div class="wrap">
+			<div class="tl">&nbsp;</div>
+			<div class="tc">&nbsp;</div>
+			<div class="tr">&nbsp;</div>
+			<div class="ml">&nbsp;</div>
+			<div class="mc clearfix">
+				<div class="Imperion-Interface-Gui-Table top">
+					<p>Login</p>
+					<div class="tools hideContainer">
+						<a class="closeDialog" href="#">Close</a>
+					</div>
+				<div class="ie_clearing"> </div>
+				</div><!-- .Imperion-Interface-Gui-Table top -->
+				<form enctype="application/x-www-form-urlencoded" method="post" action="" id="loginForm">
+					<div class="Imperion-Interface-Gui-Table middle">
+						<ul class="messages">
+												</ul>
+						<fieldset>
+							<p><label>Username:</label><input name="login[name]" value="konstantin" type="text"></p>
+							<p><label>Password:</label><input name="login[password]" value="" type="password"></p>
+						</fieldset>
+												<p>
+							<a href="http://alpha.imperion.org/index/reg">Register</a>
+						</p>
+												<p>
+							<a href="http://alpha.imperion.org/index/password-reset">Forgot your password?</a>
+						</p>
+					</div><!-- .Imperion-Interface-Gui-Table middle -->
+					<div class="Imperion-Interface-Gui-Table bottom">
+						<p class="clearfix" style="width: 200px; margin-left: auto; margin-right: auto;">
+							<a onclick="document.forms[0].submit(); return false;" href="#" class="Imperion-Interface-Gui-Button"><span class="">Login</span></a>
+						</p>
+					</div><!-- .Imperion-Interface-Gui-Table bottom -->
+				</form>
+			</div>
+			<div class="mr">&nbsp;</div>
+			<div class="bl">&nbsp;</div>
+			<div class="bc">&nbsp;</div>
+			<div class="br">&nbsp;</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	window.addEvent('domready', function() {
+		$('body').addEvent('keydown', function(e) {
+			if(e.key == 'enter') {
+				$('loginForm').submit();
+			}
+		});
+	});
+	/* ]]> */
+	</script>
+	
+
+</body></html>
