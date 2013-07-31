@@ -13,7 +13,7 @@
 			</state>
 		</driver>
 		<urls>
-			<baseurl>http://beta.imperion.org</baseurl>
+			<baseurl>http://beta.site.org</baseurl>
 			<login>/</login>
 			<index></index>
 		</urls>
