@@ -18,8 +18,8 @@
 			<index></index>
 		</urls>
 		<auth>
-			<login>k.pogorelov@traviangames.com</login>
-			<pass>asdasd</pass>
+			<login>john@doe.com</login>
+			<pass>******</pass>
 		</auth>
 		<reporter>
 			<!-- <file>/dev/null</file> -->
